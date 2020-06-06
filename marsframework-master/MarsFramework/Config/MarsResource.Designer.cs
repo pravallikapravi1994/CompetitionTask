@@ -70,6 +70,15 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C:\CompetitionTask\marsframework-master\MarsFramework\TestData\NewData.xlsx.
+        /// </summary>
+        internal static string Credentialspath {
+            get {
+                return ResourceManager.GetString("Credentialspath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to C:\CompetitionTask\marsframework-master\MarsFramework\TestData\ServiceListData.xlsx.
         /// </summary>
         internal static string ExcelPath {

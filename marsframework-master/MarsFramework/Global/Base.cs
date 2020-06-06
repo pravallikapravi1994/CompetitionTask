@@ -8,9 +8,11 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using System.Collections.Generic;
 
 using System;
 using static MarsFramework.Global.GlobalDefinitions;
+using System.Text;
 
 namespace MarsFramework.Global
 {
@@ -23,6 +25,7 @@ namespace MarsFramework.Global
         public static string ScreenShotPath = MarsResource.ScreenShotPath;
         public static string ReportPath = MarsResource.ReportPath;
         public static string ReportXMLPath = MarsResource.ReportXMLPath;
+        public static string Credpath = MarsResource.Credentialspath;
         #endregion
 
         #region reports
@@ -36,6 +39,10 @@ namespace MarsFramework.Global
         {
             #region Initialise Reports
             extent = new ExtentReports();
+
+
+
+
             var htmlReporter = new ExtentHtmlReporter(ReportPath);
             extent.AttachReporter(htmlReporter);
             //using report design
@@ -123,6 +130,9 @@ namespace MarsFramework.Global
         }
         public static string Capture(IWebDriver driver, String fileName)
         {
+
+
+
             ITakesScreenshot ts = (ITakesScreenshot)driver;
             Screenshot screenshot = ts.GetScreenshot();
             //Screenshot saving location

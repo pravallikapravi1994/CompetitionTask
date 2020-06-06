@@ -121,6 +121,9 @@
     <value>2</value>
     <comment>1 for firefox and 2 for Chrome</comment>
   </data>
+  <data name="Credentialspath" xml:space="preserve">
+    <value>C:\CompetitionTask\marsframework-master\MarsFramework\TestData\NewData.xlsx</value>
+  </data>
   <data name="ExcelPath" xml:space="preserve">
     <value>C:\CompetitionTask\marsframework-master\MarsFramework\TestData\ServiceListData.xlsx</value>
   </data>

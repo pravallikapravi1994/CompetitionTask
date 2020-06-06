@@ -135,7 +135,7 @@ namespace MarsFramework.Pages
             GlobalDefinitions.wait(1000);
             Tags.Click();
             GlobalDefinitions.wait(1000);
-            Tags.SendKeys("FirstTag" + "\n");
+            Tags.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "Tags") + "\n");
 
             //Select Service Type from radio buttons
 
@@ -150,12 +150,12 @@ namespace MarsFramework.Pages
             //select startdate
             StartDate.Click();
             GlobalDefinitions.wait(1000);
-            StartDate.SendKeys("25062020");
+            StartDate.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "StartDate"));
 
             //Select end date
             EndDate.Click();
             GlobalDefinitions.wait(1000);
-            EndDate.SendKeys("25072020");
+            EndDate.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "EndDate"));
 
             //Select Monday
             MondayCheckbox.Click();
@@ -163,13 +163,13 @@ namespace MarsFramework.Pages
             //Select start time for Monday
             MondayStartTime.Click();
             GlobalDefinitions.wait(1000);
-            MondayStartTime.SendKeys("0930am");
+            MondayStartTime.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "MondayStartTime"));
             GlobalDefinitions.wait(1000);
 
             //Select end time for Monday
             MondayendTime.Click();
             GlobalDefinitions.wait(1000);
-            MondayendTime.SendKeys("0530pm");
+            MondayendTime.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "MondayendTime"));
             GlobalDefinitions.wait(1000);
 
             //Select Skill Trade radio button
@@ -184,7 +184,7 @@ namespace MarsFramework.Pages
             GlobalDefinitions.wait(1000);
             SkillExchangeTags.Click();
             GlobalDefinitions.wait(1000);
-            SkillExchangeTags.SendKeys("FirstSTag" + "\n");
+            SkillExchangeTags.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "SkillExchangeTags") + "\n");
 
             //Select Active radio button
 

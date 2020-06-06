@@ -177,6 +177,7 @@ namespace MarsFramework
         internal void NavigateToManageListingpage()
         {
             GlobalDefinitions.wait(1000);
+
             manageListingsLink.Click();
         }
     }

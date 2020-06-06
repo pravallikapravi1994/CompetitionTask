@@ -22,10 +22,9 @@ namespace MarsFramework
 
 
 
-                GlobalDefinitions.TurnOnWait();
+                GlobalDefinitions.wait(3000);
 
-                Profile profile1 = new Profile();
-                profile1.NavigateToManageListingpage();
+              
 
                 
                 

@@ -33,11 +33,15 @@ namespace MarsFramework.Pages
 
         internal void LoginSteps()
         {
+
+            GlobalDefinitions.ExcelLib.PopulateInCollection(Base.Credpath, "Credentials");
+
+
             SignIntab.Click();
             Thread.Sleep(3000);
-            Email.SendKeys("pravallika.p@test.com");
+            Email.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "username"));
             GlobalDefinitions.TurnOnWait();
-            Password.SendKeys("hello123");
+            Password.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "password"));
             GlobalDefinitions.TurnOnWait();
             LoginBtn.Click(); 
             GlobalDefinitions.TurnOnWait();

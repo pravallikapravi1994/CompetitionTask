@@ -145,6 +145,7 @@
     <None Include="app.config" />
     <None Include="license" />
     <None Include="packages.config" />
+    <None Include="TestData\NewData.xlsx" />
     <None Include="TestData\ServiceListData.xlsx" />
   </ItemGroup>
   <ItemGroup>
